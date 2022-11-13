@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card slider</title>
+    <!-- icons link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: #FAF2F3;
+            background: linear-gradient(to bottom, #FAF2F3 50%, #DE3A60 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .content {
+            width: 800px;
+            height: 350px;
+            /* border-radius: 10px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .7); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+            border: 5px solid #DE3A60;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+
+        .slide1,.slide2,.slide3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .7);
+            background-color: #FAF2F3;
+            margin: 0 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+       .slide3:hover{
+            margin-bottom: 20px;
+        }
+       .slide2:hover{
+        margin-bottom: 20px;
+        }
+       .slide1:hover{
+        margin-bottom: 20px;
+        }
+
+        h3,
+        h4 {
+            line-height: 25px;
+        }
+
+        i {
+            cursor: pointer;
+            padding: 3px 3px;
+            font-size: 15px;
+            background-color: white;
+            color: #DE3A60;
+            border-radius: 50%;
+            border: 2px solid #DE3A60;
+            margin-top: 5px;
+        }
+        i:hover{
+            background-color: #DE3A60;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+        .links{
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width:300px) and (max-width:600px){
+            .container {
+            width: 100%;
+            height: 100%;
+            background: #FAF2F3;
+            background: linear-gradient(to bottom, #FAF2F3 50%, #DE3A60 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+            .content {
+            width: 100%;
+            height:100%;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .slide1,.slide2,.slide3 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 300px;
+            height: 300px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .7);
+            background-color: #FAF2F3;
+            margin: 30px 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s;
+        }
+       
+        }
+    </style>
+
+    <div class="container">
+        <div class="content">
+            <div class="slide1">
+                <div class="img"><img src="images/1.jpeg" alt=""></div>
+                <h3>Appollo Rief</h3>
+                <h4>Web Designer</h4>
+                <div class="links">
+                    <i class="uil uil-facebook-f"></i>
+                    <i class="uil uil-youtube"></i>
+                    <i class="uil uil-twitter"></i>
+                    <i class="uil uil-whatsapp"></i>
+                </div>
+            </div>
+            <div class="slide2">
+                <div class="img"><img src="images/2.jpeg" alt=""></div>
+                <h3>Appollo Rief</h3>
+                <h4>Web Designer</h4>
+                <div class="links">
+                    <i class="uil uil-facebook-f"></i>
+                    <i class="uil uil-youtube"></i>
+                    <i class="uil uil-twitter"></i>
+                    <i class="uil uil-whatsapp"></i>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="img"><img src="images/3.webp" alt=""></div>
+                <h3>Appollo Rief</h3>
+                <h4>Web Designer</h4>
+                <div class="links">
+                    <i class="uil uil-facebook-f"></i>
+                    <i class="uil uil-youtube"></i>
+                    <i class="uil uil-twitter"></i>
+                    <i class="uil uil-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
